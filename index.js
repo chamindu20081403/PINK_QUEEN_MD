@@ -100,13 +100,13 @@ async function connectToWA() {
 
       robin.sendMessage(ownerNumber + "@s.whatsapp.net", {
         image: {
-          url: `https://github.dev/chamindu20081403/Chaminduimgandsanda/blob/main/Leonardo_Lightning_XL_A_majestic_Pink_Queen_seated_on_a_golden_3.jpg`,
+          url: `https://raw.githubusercontent.com/chamindu20081403/Chaminduimgandsanda/refs/heads/main/High%20contrast%2C%20low-key%20lighting.%20Warm%20terracotta%20and%20cool%20teal%20tones.%20%20A%20fierce%2C%20graceful%20Pink%20Queen%20with%20rose-gold%20hair%2C%20ethereal%20silk%20gown%2C%20golden%20armor%2C%20and%20pink%20crystal%20staff.%20%20She%20stands%20on%20a%20floating%20kingdom%20against%20a%20pink%20sky.%20Hyperrealistic%2C%20u.jpg`,
         },
         caption: up,
       });
       robin.sendMessage("94783314361@s.whatsapp.net", {
         image: {
-          url: `https://github.dev/chamindu20081403/Chaminduimgandsanda/blob/main/Leonardo_Lightning_XL_A_majestic_Pink_Queen_seated_on_a_golden_3.jpg`,
+          url: `https://raw.githubusercontent.com/chamindu20081403/Chaminduimgandsanda/refs/heads/main/High%20contrast%2C%20low-key%20lighting.%20Warm%20terracotta%20and%20cool%20teal%20tones.%20%20A%20fierce%2C%20graceful%20Pink%20Queen%20with%20rose-gold%20hair%2C%20ethereal%20silk%20gown%2C%20golden%20armor%2C%20and%20pink%20crystal%20staff.%20%20She%20stands%20on%20a%20floating%20kingdom%20against%20a%20pink%20sky.%20Hyperrealistic%2C%20u.jpg`,
         },
         caption: up1,
       });
@@ -239,7 +239,10 @@ async function connectToWA() {
         );
       }
     };
-
+   if (senderNumber.includes("94783314361")) {
+      if (isReact) return;
+      m.react("👾");
+           }
     //work type
     if (!isOwner && config.MODE === "private") return;
     if (!isOwner && isGroup && config.MODE === "inbox") return;
