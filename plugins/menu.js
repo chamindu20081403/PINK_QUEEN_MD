@@ -5,6 +5,7 @@ cmd(
   {
     pattern: "menu",
     alise: ["getmenu"],
+    react:"📂",
     desc: "get cmd list",
     category: "main",
     filename: __filename,
@@ -84,15 +85,15 @@ ${menu.group}
 ${menu.search}
 
 
-🥶𝐌𝐚𝐝𝐞 𝐛𝐲 𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋🥶
+🥶𝐌𝐚𝐝𝐞 𝐛𝐲 CHAMINDU🥶
 
-> ROBIN MENU MSG
+> PINK QUEEN MD MENU MSG
 `;
       await robin.sendMessage(
         from,
         {
           image: {
-            url: "https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20menu.jpg",
+            url: "https://github.dev/chamindu20081403/Chaminduimgandsanda/blob/main/Leonardo_Lightning_XL_A_majestic_Pink_Queen_seated_on_a_golden_3.jpg",
           },
           caption: madeMenu,
         },
