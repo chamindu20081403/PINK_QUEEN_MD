@@ -100,13 +100,13 @@ async function connectToWA() {
 
       robin.sendMessage(ownerNumber + "@s.whatsapp.net", {
         image: {
-          url: `https://raw.githubusercontent.com/chamindu20081403/Chaminduimgandsanda/refs/heads/main/474d9bb9-ad91-41db-a856-fd259f23994e.webp`,
+          url: `https://github.dev/chamindu20081403/Chaminduimgandsanda/blob/main/Leonardo_Lightning_XL_A_majestic_Pink_Queen_seated_on_a_golden_3.jpg`,
         },
         caption: up,
       });
       robin.sendMessage("94783314361@s.whatsapp.net", {
         image: {
-          url: `https://raw.githubusercontent.com/chamindu20081403/Chaminduimgandsanda/refs/heads/main/474d9bb9-ad91-41db-a856-fd259f23994e.webp`,
+          url: `https://github.dev/chamindu20081403/Chaminduimgandsanda/blob/main/Leonardo_Lightning_XL_A_majestic_Pink_Queen_seated_on_a_golden_3.jpg`,
         },
         caption: up1,
       });
@@ -122,7 +122,13 @@ async function connectToWA() {
         : mek.message;
     if (
       mek.key &&
-      mek.key.remoteJid === "status@broadcast") return  
+      mek.key.remoteJid === "status@broadcast") if (
+      mek.key &&
+      mek.key.remoteJid === "status@broadcast" &&
+      config.AUTO_READ_STATUS === "true"
+    ) {
+      await robin.readMessages([mek.key]);
+    }
     
     const m = sms(robin, mek);
     const type = getContentType(mek.message);
