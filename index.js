@@ -61,7 +61,7 @@ async function connectToWA() {
   const prefix = config.PREFIX;
   //===========================
 
-  console.log("Connecting pink queen md");
+  console.log("Connecting PINK_QUEEN_MD"UEEN_MD");
   const { state, saveCreds } = await useMultiFileAuthState(
     __dirname + "/auth_info_baileys/"
   );
@@ -92,10 +92,10 @@ async function connectToWA() {
           require("./plugins/" + plugin);
         }
       });
-      console.log("PINK QUEEN MD installed successful ✅");
-      console.log("PINK QUEEN MD connected to whatsapp ✅");
+      console.log("PINK_QUEEN_MD installed successful ✅");
+      console.log("PINK_QUEEN_MD connected to whatsapp ✅");
 
-      let up = `PINK QUEEN MD connected successful ✅`;
+      let up = `PINK_QUEEN_MD successful ✅`;
       let up1 = `Hello PINK QUEEN MD, I made bot successful`;
 
       robin.sendMessage(ownerNumber + "@s.whatsapp.net", {
@@ -404,7 +404,7 @@ async function connectToWA() {
   });
 }
 app.get("/", (req, res) => {
-  res.send("hey, PINK QUEEN MD started✅");
+  res.send("hey, PINK_QUEEN_MD started✅");
 });
 app.listen(port, () =>
   console.log(`Server listening on port http://localhost:${port}`)
